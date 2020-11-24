@@ -14,11 +14,11 @@ exports.run = (client, message) => {
 
     },segundosCooldown * 1000)
     let gatos = [
-        'https://cdn.discordapp.com/attachments/755149408550781121/768478121405841428/images.jpg',
-        'https://cdn.discordapp.com/attachments/755149408550781121/768478123809046548/transferir_1.jpg',
-        'https://cdn.discordapp.com/attachments/755149408550781121/768478126295744532/transferir_2.jpg',
-        'https://cdn.discordapp.com/attachments/755149408550781121/768478129244078140/transferir.jpg',
-        'https://cdn.discordapp.com/attachments/755149408550781121/768478135875403786/images_1.jpg'
+        'https://i.imgur.com/46CM8SP.jpg',
+        'https://i.imgur.com/HjZCw2x.jpg',
+        'https://i.imgur.com/fyx0Bax.jpg',
+        'https://i.imgur.com/RcmFlx6.jpg',
+        'https://i.imgur.com/hDTEpiE.jpg'
     ]
     const random = gatos[Math.floor(Math.random() * gatos.length)];
 
@@ -26,7 +26,7 @@ exports.run = (client, message) => {
         .setColor("#00FF6C")
         .setTitle("LM-BOTS")
         .addField("Olha que gatinho fofinho!", "Vontade de APERTAR ESSA FOFURA")
-        .setFooter("LM-BOTS, a loja de bot que cabe no seu investimento!", message.author.displayAvatarURL({dynamic: true}))
+        .setFooter("Comando de cat!", message.author.displayAvatarURL({dynamic: true}))
         .setImage(random)
 
     message.channel.send(embed)

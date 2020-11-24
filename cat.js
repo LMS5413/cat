@@ -24,7 +24,7 @@ exports.run = (client, message) => {
 
     const embed = new Discord.MessageEmbed()
         .setColor("#00FF6C")
-        .setTitle("LM-BOTS")
+        .setTitle("CAT COMANDO")
         .addField("Olha que gatinho fofinho!", "Vontade de APERTAR ESSA FOFURA")
         .setFooter("Comando de cat!", message.author.displayAvatarURL({dynamic: true}))
         .setImage(random)
